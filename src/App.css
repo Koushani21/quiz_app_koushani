@@ -1,0 +1,49 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+}
+.content {
+  padding-top: 80px;
+  padding: 1rem;
+}
+
+
+.leaderboard {
+  margin-top: 2rem;
+}
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.leaderboard th,
+.leaderboard td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+}
+.leaderboard th {
+  background-color: #f1f5f9;
+}
+.page-wrapper {
+  padding-top: 80px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+.quiz-box,
+.score-page,
+.about-box {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}

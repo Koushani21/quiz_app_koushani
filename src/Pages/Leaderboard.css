@@ -1,0 +1,123 @@
+
+.leaderboard-page {
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  min-height: 100vh;
+  overflow-x: auto;
+}
+
+
+.leaderboard-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+
+.refresh-btn,
+.reset-btn {
+  margin: 10px 10px 30px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, hwb(338 67% 5%), hwb(348 45% 15%));
+  color: rgb(112, 62, 213);
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 114, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.refresh-btn:hover,
+.reset-btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  background: linear-gradient(to right, hwb(327 61% 9%), hwb(349 51% 20%));
+}
+
+
+.leaderboard-table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: lab(62.86% -2.62 -39.59);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease both;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+
+.leaderboard-table thead {
+  background-color: hsla(223, 76%, 43%, 0.529);
+  color: white;
+}
+
+
+.gold-glow {
+  background: linear-gradient(45deg, gold, #ffe066);
+  font-weight: bold;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+.silver-glow {
+  background: linear-gradient(45deg, silver, #e0e0e0);
+  font-weight: bold;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+.bronze-glow {
+  background: linear-gradient(45deg, #cd7f32, #e3b778);
+  font-weight: bold;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  }
+}
+
+
+.medal {
+  font-size: 1.4rem;
+  margin-right: 6px;
+}
+
+
+.leaderboard-table tbody tr:hover {
+  background-color: lab(43.85% 45.23 -79.08 / 0.508);
+  transition: background 0.3s ease;
+  transform: scale(1.01);
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.no-data-message {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 2rem;
+}

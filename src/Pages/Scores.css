@@ -1,0 +1,146 @@
+
+.scores-page {
+  padding: 100px 20px 40px;
+  min-height: 100vh;
+  background: linear-gradient(to right, hsl(195, 65%, 72%), #5da7e3);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.scores-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.scores-page p {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.scores-page h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.motivation-box {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin: 20px auto;
+  border-radius: 10px;
+  animation: slideFade 0.8s ease-out;
+  max-width: 600px;
+}
+
+.performance-stats {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+  animation: slideUp 0.8s ease-out;
+}
+
+.performance-stats h3,
+.performance-stats h4 {
+  color: #ffeb3b;
+  margin-bottom: 12px;
+}
+
+.performance-stats ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.performance-stats li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #e0f7fa;
+}
+
+.question-times {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.question-time-item {
+  background: rgba(255, 255, 255, 0.15);
+  border-left: 4px solid #ffeb3b;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.chart-section {
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.play-again-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #ffeb3b;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-again-btn:hover {
+  background-color: #fdd835;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
